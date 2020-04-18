@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Barlow+Condensed|Hind+Siliguri&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,14 +17,12 @@ body {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  background-color: #ebc20b;
+  color: #363636;
 }
 
 .grid .bio_data {
-  background-color: #dfdfdf;
-}
-
-.grid .summary {
-  background-color: #a1a1a1;
+  padding-left: 50px;
 }
 
 header {
@@ -33,6 +32,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Hind Siliguri";
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -87,6 +87,13 @@ header .arrow {
 
 header .arrow a {
   font-size: 25px;
+  color: #3f3f3f;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+header .arrow a:hover {
+  color: #ebc20b;
 }
 
 header .image {
@@ -112,12 +119,13 @@ header .image img {
 
 main {
   height: 50vh;
+  font-family: "Hind Siliguri";
 }
 
 main .contact_form {
   padding: 25px 0;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: #2A2A2A;
 }
 
 main .contact_form .form {
@@ -127,12 +135,12 @@ main .contact_form .form {
   margin: 0 auto;
   padding: 40px 40px 70px;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: #ffffff;
 }
 
 main .contact_form .form h2 {
-  color: #da0202;
+  color: #ebc20b;
   font-weight: 400;
 }
 
@@ -159,12 +167,14 @@ main .contact_form .form form .input_group {
 main .contact_form .form form .input_group label {
   color: #858585;
   padding: 5px 0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-family: "Barlow Condensed";
 }
 
 main .contact_form .form form .input_group input {
   outline: none;
   border: none;
+  font-family: "Hind Siliguri";
   background-color: #ffffff;
   -webkit-box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(255, 255, 255, 0.08);
           box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(255, 255, 255, 0.08);
@@ -173,6 +183,22 @@ main .contact_form .form form .input_group input {
   height: 50px;
   border-radius: 2px;
   padding: 5px;
+}
+
+main .contact_form .form form .input_group input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+main .contact_form .form form .input_group input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+main .contact_form .form form .input_group input::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+main .contact_form .form form .input_group input::placeholder {
+  font-size: 14px;
 }
 
 main .contact_form .form form .input_group button {
@@ -194,6 +220,10 @@ main .contact_form .form form .input_group button {
   color: #fff;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 .space {
   padding: 15px;
 }
@@ -213,4 +243,4 @@ main .contact_form .form form .input_group button {
 .yellow {
   color: #ebc20b;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */css.map */

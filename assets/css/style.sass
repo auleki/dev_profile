@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Barlow+Condensed|Hind+Siliguri&display=swap')
+$main_font: Anton
+$primary_font: "Hind Siliguri"
+$back_font: "Barlow Condensed"
 * 
     padding: 0
     margin: 0
@@ -11,13 +15,15 @@ body
 .grid 
     display: grid
     grid-template-columns: 50% 50%
+    background-color: #ebc20b
+    color: #363636
     
             
     .bio_data
-        // padding: 0 15px
-        background-color: #dfdfdf
+        padding-left: 50px
+        // background-color: #dfdfdf
     .summary
-        background-color: #a1a1a1
+        // background-color: #a1a1a1
         
 
 header
@@ -25,6 +31,7 @@ header
     width: 100%
     background-color: #ffffff9f
     display: flex
+    font-family: $primary_font
     flex-direction: column
     justify-content: center
     align-items: center
@@ -55,6 +62,10 @@ header
         margin-top: 45px
         a
             font-size: 25px
+            color: #3f3f3f
+            transition: 250ms
+            &:hover
+                color: #ebc20b
                 
     .image 
         color: #fff
@@ -72,10 +83,11 @@ header
 
 main 
     height: 50vh
+    font-family: $primary_font
     .contact_form
         padding: 25px 0
         text-align: center
-        background-color: #f0f0f0
+        background-color: #2A2A2A
 
         .form
             box-shadow: -5px -5px 10px rgba(0,0,0,.03),5px 5px 15px rgba(255,255,255,.09)
@@ -83,16 +95,17 @@ main
             margin: 0 auto
             padding: 40px 40px 70px
             height: 100%
-            border-radius: 25px
+            border-radius: 5px
             background-color: #ffffff
             h2
-                color: #da0202
+                color: #ebc20b
                 font-weight: 400
             form
                 margin: 0 auto
                 padding: 25px 15px
                 height: 100%
                 width: 100%
+                
                 .input_group
                     display: flex
                     flex-direction: column
@@ -102,17 +115,21 @@ main
                     label
                         color: #858585
                         padding: 5px 0
-                        letter-spacing: 1px
+                        letter-spacing: 2px
+                        font-family: $back_font
                     input
                         outline: none
                         border: none
+                        font-family: $primary_font
                         background-color: #ffffff
                         box-shadow: inset -2px -2px 6px rgba(0,0,0,.2), inset 2px 2px 5px rgba(255, 255, 255, .08)
                         color: #979797
                         font-size: 16px
                         height: 50px
                         border-radius: 2px
-                        padding: 5px 
+                        padding: 5px
+                        &::placeholder
+                            font-size: 14px
                     button
                         padding: 10px 0
 
@@ -127,6 +144,10 @@ main
     &:hover
         background-color: #333333
         color: #fff
+ul 
+    li
+        list-style-type: none
+        
 
 .space
     padding: 15px
