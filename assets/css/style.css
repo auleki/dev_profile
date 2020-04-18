@@ -129,19 +129,26 @@ main .contact_form {
 }
 
 main .contact_form .form {
-  -webkit-box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.03), 5px 5px 15px rgba(255, 255, 255, 0.09);
-          box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.03), 5px 5px 15px rgba(255, 255, 255, 0.09);
+  -webkit-box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.06), 5px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.06), 5px 5px 15px rgba(0, 0, 0, 0.4);
   width: 400px;
   margin: 0 auto;
   padding: 40px 40px 70px;
   height: 100%;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #2a2a2a;
 }
 
 main .contact_form .form h2 {
   color: #ebc20b;
   font-weight: 400;
+  font-size: 38px;
+  font-family: Anton;
+}
+
+main .contact_form .form p {
+  color: #fff;
+  font-family: "Hind Siliguri";
 }
 
 main .contact_form .form form {
@@ -175,14 +182,14 @@ main .contact_form .form form .input_group input {
   outline: none;
   border: none;
   font-family: "Hind Siliguri";
-  background-color: #ffffff;
-  -webkit-box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(255, 255, 255, 0.08);
-          box-shadow: inset -2px -2px 6px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(255, 255, 255, 0.08);
+  background-color: #2a2a2a;
+  -webkit-box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.9);
+          box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.9);
   color: #979797;
   font-size: 16px;
   height: 50px;
   border-radius: 2px;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
 }
 
 main .contact_form .form form .input_group input::-webkit-input-placeholder {
@@ -202,7 +209,23 @@ main .contact_form .form form .input_group input::placeholder {
 }
 
 main .contact_form .form form .input_group button {
-  padding: 10px 0;
+  padding: 15px 0;
+  background-color: #2a2a2a;
+  font-size: 18px;
+  letter-spacing: 1px;
+  outline: none;
+  border: none;
+  color: #ebc20b;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  cursor: pointer;
+  -webkit-box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.2), 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+main .contact_form .form form .input_group button:hover, main .contact_form .form form .input_group button:active {
+  -webkit-box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+          box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.2), inset 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .btn {
@@ -243,4 +266,10 @@ ul li {
 .yellow {
   color: #ebc20b;
 }
-/*# sourceMappingURL=style.css.map */css.map */
+
+@media screen and (max-width: 400px) {
+  .bio_data {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */s.map */
